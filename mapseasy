@@ -1,0 +1,24 @@
+###############################################################################
+#                                                                             #
+# HEADER R-BLOGGERS: R for beginners: some simple code to produce             # 
+#                    informative graphs, part one                             #
+#                                                                             #
+# STATISTICIAN / DATA SCIENTIST: Raniere Ramos            DATE: 13/01/2017    #
+#                                                                             #
+###############################################################################
+
+
+###############################################################################
+###              Make sure that the MASS package is installed               ###
+###############################################################################
+
+install.packages("MASS")
+library(MASS)   # load MASS
+attach(UScrime) # use the UScrime dataset
+
+## plot the two dimensional scatterplot and add appopriate #labels 
+plot (GDP, y, main = "Basic Scatterplot of crime rate vs. GDP", xlab = "GDP",
+      ylab = "Crime rate")
+
+###############################################################################
+
